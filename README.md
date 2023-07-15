@@ -22,7 +22,7 @@ connection = neo4j_API(URI = "bolt://11.11.11.11:7687", username = "neo4j", pass
 
 #### Adding an employee
 
-To add an employee to the database, use the method neo4j_API.add_employee(). This function takes an employee name as a string and their employee number as an integer.
+To add an employee to the database, use the method neo4j_API.add_employee(). This method takes an employee name as a string and their employee number as an integer.
 
 ```python
 connection.add_employee('Gina',2)
@@ -30,7 +30,7 @@ connection.add_employee('Gina',2)
 
 #### Getting all employees from the database
 
-To see all employees in the database, use the method neo4j_API.return_employee(). This function will return all employees in the database.
+To see all employees in the database, use the method neo4j_API.return_employee(). This method will return all employees in the database.
 
 ```python
 connection.return_employees()
