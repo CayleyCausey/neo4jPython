@@ -6,7 +6,7 @@ This is a basic API that will allow you to create a connection between Python an
 
 To use this API, you will download the neo4jAPI.py file to your local Python instance. To access the API from your notebook, use the function
 
-'''
+'''python
 from neo4jAPI import *
 '''
 
