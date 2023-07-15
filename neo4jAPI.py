@@ -54,8 +54,12 @@ class neo4j_API:
                 "RETURN a.name,a.emp_id",
                 database_="neo4j", routing_=RoutingControl.READ,
             )
+            
+            json_return = []
             for record in records:
-                print(f'Name: {record["a.name"]} \tEmployee ID: {record["a.emp_id"]}')
+                json_return.append({'Name':record['a.name'],'Emp_id':record['a.emp_id']})
+            
+            return {'employees':json_return}
         except NameError as error:
             print('Driver unable to locate database.')
             
