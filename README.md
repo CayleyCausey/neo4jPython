@@ -4,7 +4,7 @@ This is a basic API that will allow you to create a connection between Python an
 
 ## How to Use
 
-To use this API, you will download the neo4jAPI.py file to your local Python instance. To access the API from your notebook, import the neo4jAPI class using the following line of code:
+To use this API, you will download the neo4jAPI.py file and upload to your local Python instance. To access the API from your notebook, import the neo4jAPI class using the following line of code:
 
 ```python
 from neo4jAPI import *
