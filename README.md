@@ -30,10 +30,10 @@ connection.add_employee('Gina',2)
 
 #### Getting all employees from the database
 
-To see all employees in the database, use the method neo4j_API.return_employee(). This method will return all employees in the database.
+To see all employees in the database, use the method neo4j_API.return_employee(). This method will return all employees in the database in a json format.
 
 ```python
 connection.return_employees()
->Name: Bob 	Employee ID: 1
->Name: Gina 	Employee ID: 2
+>{'employees': [{'Name': 'Bob', 'Emp_id': '1'},
+>{'Name': 'Gina', 'Emp_id': 2}]}
 ```
