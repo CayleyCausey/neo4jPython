@@ -12,7 +12,7 @@ get_ipython().system('pip install neo4j')
 from neo4j import GraphDatabase, RoutingControl
 
 # Defining the API class
-class neo4j_API:
+class neo4jAPI:
     
     ## Setting up the connection details ##
     def __init__(self, URI, username, password):
